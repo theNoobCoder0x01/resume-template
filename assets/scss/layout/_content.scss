@@ -1,0 +1,23 @@
+.my-name {
+    font-size: 3.25rem;
+}
+
+.header-border {
+    border-width: 0.5px !important;
+}
+
+.skills__grid {
+    grid-template-columns: auto 1px auto;
+}
+
+[class*="__description"] {
+    list-style: '–  ';
+}
+
+.achievements__table {
+    tr:not(:last-child) {
+        td {
+            padding-bottom: 0.75rem;
+        }
+    }
+}
