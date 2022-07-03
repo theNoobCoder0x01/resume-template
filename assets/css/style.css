@@ -25067,4 +25067,9 @@ textarea.form-control-lg {
 
 .achievements__table tr:not(:last-child) td {
   padding-bottom: 0.5rem;
+}
+
+.social-logo {
+  height: 18px;
+  aspect-ratio: 1;
 }/*# sourceMappingURL=style.css.map */
