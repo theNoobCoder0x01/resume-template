@@ -25066,7 +25066,7 @@ textarea.form-control-lg {
 }
 
 .achievements__table tr:not(:last-child) td {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.625rem;
 }
 
 .social-logo {
