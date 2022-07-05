@@ -25072,4 +25072,9 @@ textarea.form-control-lg {
 .social-logo {
   height: 18px;
   aspect-ratio: 1;
+}
+
+.content-section {
+  width: 840px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
