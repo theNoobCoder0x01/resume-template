@@ -13,7 +13,17 @@
 .achievements__table {
     tr:not(:last-child) {
         td {
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.625rem;
         }
     }
+}
+
+.social-logo {
+    height: 18px;
+    aspect-ratio: 1;
+}
+
+.content-section {
+    width: 840px;
+    margin: auto;
 }
