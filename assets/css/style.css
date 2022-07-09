@@ -25066,7 +25066,7 @@ textarea.form-control-lg {
 }
 
 .achievements__table tr:not(:last-child) td {
-  padding-bottom: 0.625rem;
+  padding-bottom: 0.75rem;
 }
 
 .social-logo {
@@ -25075,6 +25075,6 @@ textarea.form-control-lg {
 }
 
 .content-section {
-  width: 840px;
+  width: 820px;
   margin: auto;
 }/*# sourceMappingURL=style.css.map */
