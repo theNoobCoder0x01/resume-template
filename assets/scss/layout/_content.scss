@@ -1,29 +1,42 @@
 .my-name {
-    font-size: 3.25rem;
+  font-size: 3.25rem;
 }
 
 .header-border {
-    border-width: 0.5px !important;
+  border-width: 0.5px !important;
+}
+
+[class*="__title"] {
+  color: $black;
+  font-weight: 600 !important;
 }
 
 [class*="__description"] {
-    list-style: '–  ';
+  list-style: '–  ';
 }
 
 .achievements__table {
-    tr:not(:last-child) {
-        td {
-            padding-bottom: 0.625rem;
-        }
+  tr:not(:last-child) {
+    td {
+      border-bottom: 1px solid $light;
     }
+  }
+
+  td {
+    padding: 0.25rem;
+  }
 }
 
 .social-logo {
-    height: 18px;
-    aspect-ratio: 1;
+  height: 18px;
+  aspect-ratio: 1;
 }
 
 .content-section {
-    width: 840px;
-    margin: auto;
+  width: 830px;
+  margin: auto;
+}
+
+.column__narrow {
+  width: 300px;
 }
