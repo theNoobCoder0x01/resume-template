@@ -21842,6 +21842,7 @@ textarea.form-control-lg {
 }
 .achievements__table td {
   padding: 0.25rem;
+  vertical-align: middle;
 }
 
 .social-logo {
@@ -21855,5 +21856,6 @@ textarea.form-control-lg {
 }
 
 .column__narrow {
-  width: 300px;
+  width: 255px;
+  flex-basis: 255px;
 }/*# sourceMappingURL=style.css.map */
