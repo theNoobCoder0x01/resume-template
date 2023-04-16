@@ -1,5 +1,5 @@
 .my-name {
-  font-size: 3.25rem;
+  font-size: 3rem;
 }
 
 .header-border {
@@ -9,6 +9,7 @@
 [class*="__title"] {
   color: $black;
   font-weight: 600 !important;
+  border-bottom: 1px solid #888888;
 }
 
 [class*="__description"] {
@@ -23,7 +24,7 @@
   }
 
   td {
-    padding: 0.25rem;
+    padding: 0.125rem;
     vertical-align: middle;
   }
 }
@@ -33,12 +34,22 @@
   aspect-ratio: 1;
 }
 
+.profile-picture {
+  width: 80px;
+  height: 80px;
+
+  > img {
+    transform: scale(1.25) translateY(4px);
+  }
+}
+
 .content-section {
   width: 830px;
   margin: auto;
 }
 
-.column__narrow {
-  width: 255px;
-  flex-basis: 255px;
-}
+
+// .column__narrow {
+//   width: 255px;
+//   flex-basis: 255px;
+// }
