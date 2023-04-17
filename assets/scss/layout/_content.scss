@@ -37,8 +37,10 @@
 .profile-picture {
   height: 85px;
   width: 85px;
-
+  
   > img {
+    height: 85px;
+    width: 85px;
     transform: scale(1.25) translateY(4px);
   }
 }
