@@ -22502,7 +22502,7 @@ textarea.form-control-lg {
 }
 
 .my-name {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 .header-border {
@@ -22533,8 +22533,8 @@ textarea.form-control-lg {
 }
 
 .profile-picture {
-  width: 80px;
-  height: 80px;
+  height: 85px;
+  aspect-ratio: 1;
 }
 .profile-picture > img {
   transform: scale(1.25) translateY(4px);
