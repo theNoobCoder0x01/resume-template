@@ -22534,7 +22534,7 @@ textarea.form-control-lg {
 
 .profile-picture {
   height: 85px;
-  aspect-ratio: 1;
+  width: 85px;
 }
 .profile-picture > img {
   transform: scale(1.25) translateY(4px);
