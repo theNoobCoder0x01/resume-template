@@ -1,5 +1,5 @@
 .my-name {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
 }
 
 .header-border {
@@ -35,12 +35,12 @@
 }
 
 .profile-picture {
-  height: 85px;
-  width: 85px;
+  height: 80px;
+  width: 80px;
   
   > img {
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     transform: scale(1.25) translateY(4px);
   }
 }
