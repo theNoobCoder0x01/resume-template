@@ -11323,7 +11323,12 @@ textarea.form-control-lg {
 }
 
 [class*=__description] {
-  list-style: "-  ";
+  position: relative;
+}
+[class*=__description] > li::before {
+  position: absolute;
+  left: -0.375rem;
+  content: "–";
 }
 
 .achievements__table tr:not(:last-child) td {
