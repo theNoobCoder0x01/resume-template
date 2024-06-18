@@ -1,5 +1,5 @@
 .my-name {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .header-border {
@@ -9,7 +9,7 @@
 [class*="__title"] {
   color: $black;
   font-weight: 600 !important;
-  border-bottom: 1px solid #888888;
+  border-bottom: 0.75px solid #888888;
 }
 
 [class*="__description"] {
