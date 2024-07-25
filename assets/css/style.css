@@ -11347,12 +11347,6 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: center;
 }
-.hlist__separator {
-  font-size: 1rem;
-  color: #808080;
-  padding: 0 0.25rem;
-}
-
 .hlist_lg {
   display: flex;
   align-items: center;
