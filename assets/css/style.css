@@ -11477,6 +11477,10 @@ textarea.form-control-lg {
   aspect-ratio: 1;
 }
 
+.page-break-after-always {
+  page-break-after: always;
+}
+
 /* latin-ext */
 @font-face {
   font-family: "Poppins";
