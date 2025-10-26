@@ -133,6 +133,20 @@
   }
 }
 
+.volunteer {
+  .designation {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .event {
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
 .project {
   &__name {
     font-weight: 600;
