@@ -188,9 +188,11 @@ p {
 }
 
 abbr[title] {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   cursor: help;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 address {
@@ -4279,15 +4281,21 @@ progress {
 }
 
 .user-select-all {
-  user-select: all !important;
+  -webkit-user-select: all !important;
+     -moz-user-select: all !important;
+          user-select: all !important;
 }
 
 .user-select-auto {
-  user-select: auto !important;
+  -webkit-user-select: auto !important;
+     -moz-user-select: auto !important;
+          user-select: auto !important;
 }
 
 .user-select-none {
-  user-select: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
 }
 
 .pe-none {
@@ -9694,7 +9702,9 @@ progress {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -9718,6 +9728,10 @@ progress {
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
+}
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
 }
 .form-control::placeholder {
   color: #6c757d;
@@ -9849,7 +9863,9 @@ textarea.form-control-lg {
   }
 }
 .form-select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .form-select:focus {
   border-color: rgb(151, 169.5, 202.5);
@@ -9916,8 +9932,11 @@ textarea.form-control-lg {
   background-position: center;
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  appearance: none;
-  print-color-adjust: exact;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -10011,7 +10030,9 @@ textarea.form-control-lg {
   height: 1.5rem;
   padding: 0;
   background-color: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .form-range:focus {
   outline: 0;
@@ -10032,15 +10053,18 @@ textarea.form-control-lg {
   background-color: #2f5496;
   border: 0;
   border-radius: 1rem;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-webkit-slider-thumb {
+    -webkit-transition: none;
     transition: none;
   }
 }
 .form-range::-webkit-slider-thumb {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 .form-range::-webkit-slider-thumb:active {
   background-color: rgb(192.6, 203.7, 223.5);
@@ -10060,15 +10084,18 @@ textarea.form-control-lg {
   background-color: #2f5496;
   border: 0;
   border-radius: 1rem;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-moz-range-thumb {
+    -moz-transition: none;
     transition: none;
   }
 }
 .form-range::-moz-range-thumb {
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 .form-range::-moz-range-thumb:active {
   background-color: rgb(192.6, 203.7, 223.5);
@@ -10126,9 +10153,16 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
+.form-floating > .form-control::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
+  color: transparent;
+}
 .form-floating > .form-control::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
+}
+.form-floating > .form-control:not(:-moz-placeholder), .form-floating > .form-control-plaintext:not(:-moz-placeholder) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
 }
 .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
@@ -10144,6 +10178,10 @@ textarea.form-control-lg {
 .form-floating > .form-select {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
+}
+.form-floating > .form-control:not(:-moz-placeholder) ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
@@ -10579,7 +10617,9 @@ textarea.form-control-lg {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
@@ -10959,7 +10999,9 @@ textarea.form-control-lg {
 }
 .btn-close:disabled, .btn-close.disabled {
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   opacity: 0.25;
 }
 
@@ -11005,6 +11047,7 @@ textarea.form-control-lg {
   --bs-toast-zindex: 1090;
   position: absolute;
   z-index: var(--bs-toast-zindex);
+  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   pointer-events: none;
@@ -11306,7 +11349,7 @@ textarea.form-control-lg {
 }
 
 .section {
-  padding-bottom: 1.25rem;
+  padding-bottom: 1rem;
 }
 .section__title {
   line-height: 1;
@@ -11343,9 +11386,10 @@ textarea.form-control-lg {
   margin-left: 0.25rem;
   padding-left: 0.875rem;
   font-size: 0.9375rem;
+  list-style-type: "- ";
 }
 .section .description-list__point {
-  padding-top: 0.375rem;
+  padding-top: 0.25rem;
 }
 .section .description-list__point:first-child {
   padding-top: 0;
@@ -11354,6 +11398,7 @@ textarea.form-control-lg {
   position: absolute;
   left: 0;
   content: "–";
+  display: none;
 }
 .section.objective {
   font-size: 0.875rem;
@@ -11432,6 +11477,8 @@ textarea.form-control-lg {
   padding: 0 0.375rem;
   width: 180px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 .skills__list {
   font-weight: 600;
@@ -11443,8 +11490,12 @@ textarea.form-control-lg {
 .skills__tag {
   border: 0.75px solid #444;
   border-radius: 3px;
-  padding: 1.5px 6px;
+  padding: 0 3px;
   line-height: 1.5;
+}
+.skills__tag-info {
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 .skills .section__item {
   display: flex;
@@ -11452,7 +11503,7 @@ textarea.form-control-lg {
   line-height: 1;
 }
 .skills .section__item:not(:last-child) {
-  padding-bottom: 0.625rem;
+  padding-bottom: 0.5rem;
 }
 
 .profile-picture {
@@ -11819,4 +11870,4 @@ textarea.form-control-lg {
   font-display: swap;
   src: url(https://raw.githubusercontent.com/theNoobCoder0x01/resume-template/main/assets/fonts/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+}/*# sourceMappingURL=style.css.map */
