@@ -193,7 +193,8 @@
   &__list {
     font-weight: 600;
     display: flex;
-    gap: 0.625rem;
+    flex-wrap: wrap;
+    gap: 0.375rem 0.625rem;
     align-items: center;
   }
 
