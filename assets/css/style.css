@@ -11385,11 +11385,11 @@ textarea.form-control-lg {
   margin: 0;
   margin-left: 0.25rem;
   padding-left: 0.875rem;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   list-style-type: "- ";
 }
 .section .description-list__point {
-  padding-top: 0.25rem;
+  padding-top: 0.125rem;
 }
 .section .description-list__point:first-child {
   padding-top: 0;
@@ -11401,7 +11401,7 @@ textarea.form-control-lg {
   display: none;
 }
 .section.objective {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .subsection__item {
